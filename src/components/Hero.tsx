@@ -126,11 +126,13 @@ const handleScroll = () => {
 
         {/* HAMBURGER */}
         <button
-          className="md:hidden text-white text-2xl leading-none"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          ☰
-        </button>
+  className={`md:hidden text-2xl leading-none transition-colors duration-300 ${
+    scrolled ? "text-gray-800" : "text-white"
+  }`}
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  ☰
+</button>
       </div>
     </div>
   </div>

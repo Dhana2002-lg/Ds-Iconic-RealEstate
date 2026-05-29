@@ -2,7 +2,7 @@ import { useState, useRef } from 'react'
 import type React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
-import { Phone, MapPin, Send, CheckCircle } from 'lucide-react'
+import { Phone, MapPin, Send, CheckCircle} from 'lucide-react'
 import { FaWhatsapp } from 'react-icons/fa'
 import { toast } from "sonner"
 const projects = [
@@ -11,6 +11,8 @@ const projects = [
   'Sai Durga',
   'Sri Sai',
   'Prakruthi',
+  'Indraprasta',
+  'Sandy Castle',
   'General Inquiry',
 ]
 

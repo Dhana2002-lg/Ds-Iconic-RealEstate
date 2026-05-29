@@ -19,6 +19,9 @@ const images = [
   "/indraprasta.png",
   "/indraprasta2.png",
   "/indraprasta3.png",
+  "/sandycastle.png",
+  "/sandycastle2.png",
+  "/sandycastle3.png",
 ];
 
 export default function Gallery() {

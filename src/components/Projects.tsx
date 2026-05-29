@@ -53,6 +53,14 @@ const projects = [
     tag: 'Popular',
     tagColor: '#00883d',
   },
+  {
+  name: 'Sandy Castle',
+  image: '/sandycastle.png',
+  location: 'Kancheru, Bhogapuram',
+  acres: 'Fully Furnished Studio Apartments',
+  tag:'Rental Returns',
+  tagColor: '#fb111f',
+},
   
  
 ]
@@ -149,6 +157,8 @@ export default function Projects() {
       ? '/prakruthi'
       : project.name === 'Indraprasta'
       ? '/indraprasta'
+      : project.name === 'Sandy Castle'
+      ? '/sandy-castle'
       : '/'
   }
   className="btn-brand w-full block text-center py-3 rounded-xl text-sm"

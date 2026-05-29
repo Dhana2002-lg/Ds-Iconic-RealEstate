@@ -1,7 +1,6 @@
 import { MapPin, Phone } from 'lucide-react'
-import { FaWhatsapp } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-
+import { FaWhatsapp, FaInstagram, FaFacebookF } from 'react-icons/fa'
 const quickLinks = [
   { label: 'Home', id: 'home' },
   { label: 'About', id: 'about' },
@@ -60,16 +59,45 @@ export default function Footer() {
               Premium VMRDA approved open plot communities across Andhra Pradesh.
             </p>
             {/* Social */}
-            <a
-              href="https://wa.me/919398634198"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-white text-sm font-sans font-semibold transition-opacity hover:opacity-90"
-              style={{ background: '#25D366' }}
-            >
-              <FaWhatsapp className="w-4 h-4" />
-              WhatsApp Us
-            </a>
+<div className="flex items-center gap-3">
+
+  {/* WhatsApp */}
+  <a
+    href="https://wa.me/919398634198"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-11 h-11 rounded-full flex items-center justify-center text-white shadow-lg hover:scale-110 transition-transform duration-300"
+    style={{ background: '#25D366' }}
+  >
+    <FaWhatsapp className="w-5 h-5" />
+  </a>
+
+  {/* Instagram */}
+  <a
+    href="https://www.instagram.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-11 h-11 rounded-full flex items-center justify-center text-white shadow-lg hover:scale-110 transition-transform duration-300"
+    style={{
+      background:
+        'linear-gradient(135deg,#f9ce34,#ee2a7b,#6228d7)',
+    }}
+  >
+    <FaInstagram className="w-5 h-5" />
+  </a>
+
+  {/* Facebook */}
+  <a
+    href="https://www.facebook.com/satya.devada.9/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-11 h-11 rounded-full flex items-center justify-center text-white shadow-lg hover:scale-110 transition-transform duration-300"
+    style={{ background: '#1877F2' }}
+  >
+    <FaFacebookF className="w-5 h-5" />
+  </a>
+
+</div>
           </div>
 
           {/* Quick Links */}

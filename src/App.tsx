@@ -21,6 +21,7 @@ import SandyBeach from "./pages/SandyBeach";
 import SriSai from "./pages/SriSai";
 import Prakruthi from "./pages/Prakruthi";
 import Indraprasta from "./pages/Indraprasta";
+import SandyCastle from "./pages/SandyCastle";
 
 /* ================= HOME PAGE ================= */
 function HomePage() {
@@ -102,6 +103,7 @@ function AppRoutes() {
         <Route path="/sri-sai" element={<SriSai />} />
         <Route path="/prakruthi" element={<Prakruthi />} />
         <Route path="/indraprasta" element={<Indraprasta />} />
+        <Route path="/sandy-castle" element={<SandyCastle />} />
       </Routes>
     </LoadingGate>
   );
