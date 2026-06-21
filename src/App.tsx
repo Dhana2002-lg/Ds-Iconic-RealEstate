@@ -22,6 +22,8 @@ import SriSai from "./pages/SriSai";
 import Prakruthi from "./pages/Prakruthi";
 import Indraprasta from "./pages/Indraprasta";
 import SandyCastle from "./pages/SandyCastle";
+import VaarahiAirportResidences from "./pages/VaarahiAirportResidences";
+import VaarahiAinadaTownship from "./pages/VaarahiAinadaTownship";
 
 /* ================= HOME PAGE ================= */
 function HomePage() {
@@ -93,18 +95,27 @@ function AppRoutes() {
   return (
     <LoadingGate>
       <Routes>
-        {/* HOME */}
-        <Route path="/" element={<HomePage />} />
+  <Route path="/" element={<HomePage />} />
 
-        {/* PROJECT PAGES */}
-        <Route path="/sai-durga" element={<SaiDurga />} />
-        <Route path="/san-euphoria" element={<SanEuphoria />} />
-        <Route path="/sandy-beach" element={<SandyBeach />} />
-        <Route path="/sri-sai" element={<SriSai />} />
-        <Route path="/prakruthi" element={<Prakruthi />} />
-        <Route path="/indraprasta" element={<Indraprasta />} />
-        <Route path="/sandy-castle" element={<SandyCastle />} />
-      </Routes>
+  <Route path="/sai-durga" element={<SaiDurga />} />
+  <Route path="/san-euphoria" element={<SanEuphoria />} />
+  <Route path="/sandy-beach" element={<SandyBeach />} />
+  <Route path="/sri-sai" element={<SriSai />} />
+  <Route path="/prakruthi" element={<Prakruthi />} />
+  <Route path="/indraprasta" element={<Indraprasta />} />
+  <Route path="/sandy-castle" element={<SandyCastle />} />
+
+  <Route
+  path="/vaarahi-airport-residences"
+  element={<VaarahiAirportResidences />}
+/>
+<Route
+  path="/vaarahi-ainada-township"
+  element={<VaarahiAinadaTownship />}
+/>
+
+
+</Routes>
     </LoadingGate>
   );
 }

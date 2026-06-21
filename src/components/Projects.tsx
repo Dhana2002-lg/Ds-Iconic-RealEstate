@@ -61,6 +61,22 @@ const projects = [
   tag:'Rental Returns',
   tagColor: '#fb111f',
 },
+{
+  name: 'Vaarahi Airport Residences',
+  image: '/vaarahi-airport-residences.png',
+  location: 'Bhogapuram',
+  acres: '60 Acres Mega Layout',
+  tag: 'Airport Project',
+  tagColor: '#00883d',
+},
+{
+  name: 'Vaarahi Ainada Township',
+  image: '/vaarahi-ainada-township.png',
+  location: 'Anandapuram',
+  acres: 'Premium Township',
+  tag: 'Investment Hotspot',
+  tagColor: '#fb111f',
+},
   
  
 ]
@@ -159,6 +175,10 @@ export default function Projects() {
       ? '/indraprasta'
       : project.name === 'Sandy Castle'
       ? '/sandy-castle'
+      : project.name === 'Vaarahi Airport Residences'
+? '/vaarahi-airport-residences'
+: project.name === 'Vaarahi Ainada Township'
+? '/vaarahi-ainada-township'
       : '/'
   }
   className="btn-brand w-full block text-center py-3 rounded-xl text-sm"
